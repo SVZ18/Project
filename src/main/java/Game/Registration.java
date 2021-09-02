@@ -54,13 +54,13 @@ public class Registration {
         passwordText.setBounds(240, 240, 165, 25);
         panel.add(passwordText);
 
-        repeatPsLabel = new JLabel("Repeat password");
-        repeatPsLabel.setBounds(100, 280, 100, 25);
-        panel.add(repeatPsLabel);
-
-        repeatPsText = new JPasswordField();
-        repeatPsText.setBounds(240, 280, 165, 25);
-        panel.add(repeatPsText);
+//        repeatPsLabel = new JLabel("Repeat password");
+//        repeatPsLabel.setBounds(100, 280, 100, 25);
+//        panel.add(repeatPsLabel);
+//
+//        repeatPsText = new JPasswordField();
+//        repeatPsText.setBounds(240, 280, 165, 25);
+//        panel.add(repeatPsText);
 
         button = new JButton("Exit");
         button.setBounds(100, 320, 100, 25);
@@ -114,6 +114,7 @@ public class Registration {
                                 @Override
                                 public void actionPerformed(ActionEvent e) {
                                     CowsAndBulls.main();
+                                    frame2.dispose();
 
                                 }
                             });

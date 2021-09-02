@@ -31,13 +31,13 @@ public class CowsAndBulls {
     private boolean hasDuplicates(int number) {
         boolean[] digits = new boolean[10];
 
-        while (number > 10) {
+        while (number > 0) {
             int last = number % 10;
 
-            if (digits[last])
+            if (digits[number % 10])
                 return true;
 
-            digits[last] = true;
+            digits[number % 10] = true;
             number = number / 10;
         }
         return false;
@@ -183,4 +183,6 @@ public class CowsAndBulls {
         });
     }
 }
+
+
 
